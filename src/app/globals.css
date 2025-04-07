@@ -1,1 +1,45 @@
 @import "tailwindcss";
+
+:root {
+  --black-color0: #333333;
+  --white-color01: #ffffff;
+  --white-color02: #f8f8f8;
+  --pink-color01: #f2968f;
+  --yellow-color01: #f1e689;
+  --yellow-color02: #978c2f;
+  --blue-color01: #acd7ff;
+  --blue-color02: #acd7ff;
+  --pink-color02: #eda8b3;
+  --green-color01: #c5e59c;
+  --green-color03: #6b8b42;
+}
+
+body {
+  background-color: var(--white-color01);
+}
+
+p,
+h1,
+h2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+}
