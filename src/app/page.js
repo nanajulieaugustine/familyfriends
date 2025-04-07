@@ -1,3 +1,4 @@
+import ListView from "@/components/(listcard)/ListView";
 export default function Home() {
-  return <div></div>;
+  return <section></section>;
 }
