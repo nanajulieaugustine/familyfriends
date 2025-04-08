@@ -1,18 +1,24 @@
 const FilterButton = () => {
   return (
-    <div className="flex overflow-x-auto gap-2">
-      <button className="rounded-2xl border-1 px-4 py-1 cursor-pointer">
-        <img className="rounded-5xl" src="" alt="" />
-        Alle
-      </button>
-      <button className="rounded-2xl border-1 px-4 py-1 cursor-pointer">
-        <img className="rounded-5xl" src="" alt="" />
-        Katte
-      </button>
-      <button className="rounded-2xl border-1 px-4 py-1 cursor-pointer">
-        <img className="rounded-5xl" src="" alt="" />
-        Hunde
-      </button>
+    <div className="ltr ps-0">
+      <div className="flex overflow-x-auto gap-2  snap-x scroll-ps-6">
+        <button className="rounded-3xl border-1 px-6 py-2 cursor-pointer border-[#CACACD]">
+          Alle
+        </button>
+        <button className="rounded-3xl border-1 px-6 py-2 cursor-pointer border-[#CACACD]">
+          Katte
+        </button>
+        <button className="rounded-3xl border-1 px-6 py-2 cursor-pointer border-[#CACACD]">
+          Hunde
+        </button>
+
+        <button className="rounded-3xl border-1 px-6 py-2 cursor-pointer border-[#CACACD]">
+          Hunde
+        </button>
+        <button className="rounded-3xl border-1 px-6 py-2 cursor-pointer border-[#CACACD]">
+          Hunde
+        </button>
+      </div>
     </div>
   );
 };

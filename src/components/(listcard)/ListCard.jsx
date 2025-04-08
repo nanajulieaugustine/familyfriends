@@ -1,14 +1,17 @@
 import FaveIcon from "../(globals)/FaveIcon";
+import RemoteImage from "../RemoteImage";
 
 const ListCard = () => {
   return (
-    <div className="">
+    <div className="rounded-2xl bg-[#ffffff] shadow-sm">
       <FaveIcon></FaveIcon>
-      <img className="rounded-2xl -z-10" src="" alt="" />
-      <h3>navn</h3>
-      <div className="flex justify-between">
-        <p>type</p>
-        <p>alder</p>
+      <RemoteImage></RemoteImage>
+      <div className="p-3">
+        <h3>navn</h3>
+        <div className="flex justify-between">
+          <p className="text-[#ADADAD]">type</p>
+          <p className="text-[#ADADAD]">alder</p>
+        </div>
       </div>
     </div>
   );

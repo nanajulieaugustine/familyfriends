@@ -15,7 +15,8 @@
 }
 
 body {
-  background-color: var(--white-color01);
+  background-color: #f9f9fb;
+  padding-inline: 2rem;
 }
 
 p,

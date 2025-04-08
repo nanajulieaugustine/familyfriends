@@ -1,6 +1,6 @@
 const PrimaryButton = () => {
   return (
-    <button className="bg-red-500 rounded-2xl px-10 cursor-pointer">
+    <button className="bg-[#f2968f] text-[#ffffff] rounded-2xl px-12 py-2 cursor-pointer">
       Adopter <span></span>
     </button>
   );
