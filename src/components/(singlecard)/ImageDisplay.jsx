@@ -1,10 +1,16 @@
 import BackArrow from "../(globals)/BackArrow";
 import FaveIcon from "../(globals)/FaveIcon";
 import InnerCard from "./InnerCard";
+import RemoteImage from "../RemoteImage";
 const ImageDisplay = () => {
   return (
     <div>
-      <img className="rounded-2xl -z-10" src="" alt="" />
+      <div className="flex justify-between items-center">
+        <BackArrow></BackArrow>
+        <FaveIcon></FaveIcon>
+      </div>
+      <RemoteImage></RemoteImage>
+      <InnerCard></InnerCard>
     </div>
   );
 };

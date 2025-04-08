@@ -1,12 +1,10 @@
 import DescTag from "./DescTag";
-import PrimaryButton from "../(globals)/PrimaryButton";
 const TextDisplay = () => {
   return (
-    <div>
+    <div className="flex flex-col gap-3 relative -top-5">
       <h1>navn</h1>
       <DescTag></DescTag>
       <p>beskrivelse</p>
-      <PrimaryButton></PrimaryButton>
     </div>
   );
 };

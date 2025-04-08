@@ -3,7 +3,7 @@ import ListCard from "./ListCard";
 
 const ListView = () => {
   return (
-    <div>
+    <div className="flex flex-col gap-3">
       <FilterButton></FilterButton>
       <ListCard className="grid grid-cols-2"></ListCard>
     </div>

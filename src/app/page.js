@@ -12,6 +12,11 @@ export default async function Home() {
   return (
     <section>
       <ListView></ListView>
+      {/* {animals.map((animal) => (
+        <div key={animal.id}>
+          <h1>{animals.name}</h1>
+        </div>
+      ))} */}
     </section>
   );
 }

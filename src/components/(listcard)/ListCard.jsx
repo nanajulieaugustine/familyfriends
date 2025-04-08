@@ -4,7 +4,6 @@ import RemoteImage from "../RemoteImage";
 const ListCard = () => {
   return (
     <div className="rounded-2xl bg-[#ffffff] shadow-sm">
-      <FaveIcon></FaveIcon>
       <RemoteImage></RemoteImage>
       <div className="p-3">
         <h3>navn</h3>

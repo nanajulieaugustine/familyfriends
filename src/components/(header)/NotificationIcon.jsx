@@ -1,5 +1,11 @@
+import { GoBell } from "react-icons/go";
+
 const NotificationIcon = () => {
-  return <div></div>;
+  return (
+    <div>
+      <GoBell size={20} />
+    </div>
+  );
 };
 
 export default NotificationIcon;
