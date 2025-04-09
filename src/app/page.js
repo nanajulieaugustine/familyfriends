@@ -3,20 +3,23 @@ import ListView from "@/components/(listcard)/ListView";
 import RemoteImage from "@/components/RemoteImage";
 
 export default async function Home() {
-  const data = await fetch("https://api.petfinder.com/v2/animals", {
+  const response = await fetch("https://api.petfinder.com/v2/animals", {
     headers: {
       Authorization: `Bearer ${process.env.API_TOKEN}`,
     },
   });
-  const animals = await data.json();
+  console.log(response);
+
+  const data = await response.json();
+  const animals = data.animals;
+
   return (
     <section>
-      <ListView></ListView>
-      {/* {animals.map((animal) => (
-        <div key={animal.id}>
-          <h1>{animals.name}</h1>
-        </div>
-      ))} */}
+      <ListView>
+        {animals.animals.map((animal) => (
+          <h2>{animal.name}</h2>
+        ))}
+      </ListView>
     </section>
   );
 }
