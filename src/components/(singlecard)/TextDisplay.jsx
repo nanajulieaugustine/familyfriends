@@ -1,5 +1,6 @@
 import DescTag from "./DescTag";
-const TextDisplay = () => {
+
+const TextDisplay = ({ name, description }) => {
   return (
     <div className="flex flex-col gap-3 relative -top-5">
       <h1>navn</h1>

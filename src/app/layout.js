@@ -33,8 +33,8 @@ export default function RootLayout({ children }) {
         <header>
           <Header></Header>
         </header>
-        <main className="flex-grow">{children}</main>
-        <footer className="mt-auto">
+        <main>{children}</main>
+        <footer>
           <Footer></Footer>
         </footer>
       </body>

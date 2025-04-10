@@ -1,25 +1,13 @@
 import PrimaryButton from "@/components/(globals)/PrimaryButton";
-import ListView from "@/components/(listcard)/ListView";
+import ClientList from "@/components/(listcard)/ClientList";
 import RemoteImage from "@/components/RemoteImage";
+import FilterButton from "@/components/(globals)/FilterButton";
 
 export default async function Home() {
-  const response = await fetch("https://api.petfinder.com/v2/animals", {
-    headers: {
-      Authorization: `Bearer ${process.env.API_TOKEN}`,
-    },
-  });
-  console.log(response);
-
-  const data = await response.json();
-  const animals = data.animals;
-
   return (
-    <section>
-      <ListView>
-        {animals.animals.map((animal) => (
-          <h2>{animal.name}</h2>
-        ))}
-      </ListView>
+    <section className="flex flex-col gap-3">
+      <FilterButton></FilterButton>
+      <ClientList></ClientList>
     </section>
   );
 }
