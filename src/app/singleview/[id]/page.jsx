@@ -1,5 +1,6 @@
 import SingleView from "@/components/(singlecard)/SingleView";
-const SingleViewPage = () => {
+const SingleViewPage = async ({ params }) => {
+  const { id } = await params.id;
   return (
     <section>
       <SingleView></SingleView>
