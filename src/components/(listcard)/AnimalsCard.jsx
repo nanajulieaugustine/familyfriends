@@ -11,7 +11,7 @@ const AnimalsCard = ({ id, photos, name, age, breeds }) => {
       key={id}
       className="flex flex-col gap-2 rounded-2xl bg-[#ffffff] shadow-sm"
     >
-      <Link href={`/singleview/${id}`>
+      <Link href={`/singleview/${id}`}>
         {photo ? (
           <Image
             alt={`Billede af ${name}`}

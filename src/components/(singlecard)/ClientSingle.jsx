@@ -8,7 +8,7 @@ const ClientList = async () => {
   }).then((res) => res.json());
 
   return (
-    <ul className="grid grid-cols-2 gap-4">
+    <ul>
       {data.animals.map((animal, id) => (
         <SingleView key={id} {...animal}></SingleView>
       ))}

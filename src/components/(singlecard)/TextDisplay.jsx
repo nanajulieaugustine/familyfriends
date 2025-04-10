@@ -3,9 +3,9 @@ import DescTag from "./DescTag";
 const TextDisplay = ({ name, description }) => {
   return (
     <div className="flex flex-col gap-3 relative -top-5">
-      <h1>navn</h1>
+      <h1>{name}</h1>
       <DescTag></DescTag>
-      <p>beskrivelse</p>
+      <p>{description}</p>
     </div>
   );
 };
