@@ -10,5 +10,5 @@ export default async function SingleViewPage({ params }) {
   const animalData = await data.json();
   console.log(animalData);
 
-  return <SingleView>{...animalData.animal}</SingleView>;
+  return <SingleView {...animalData.animal}></SingleView>;
 }

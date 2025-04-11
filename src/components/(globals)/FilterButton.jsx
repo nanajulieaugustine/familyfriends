@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const FilterButton = () => {
   const pathname = usePathname();
-  const [selectedItem, setSelectedItem] = useState("");
+  const [selectedItem, setSelectedItem] = useState("All");
   const [activeColor] = useState("border-[#CACACD]");
 
   const handleClick = (item) => {
@@ -13,7 +13,7 @@ const FilterButton = () => {
   };
 
   return (
-    <div className="flex overflow-scroll ps-0 gap-3">
+    <div className="flex overflow-x-auto ps-0 gap-3 hide-scrollbar">
       <button
         onClick={() => handleClick("All")}
         className={`rounded-3xl border-1 pl-6 pr-10 gap-1 py-2 cursor-pointer border-[#CACACD] flex flex-row items-center justify-between ${
