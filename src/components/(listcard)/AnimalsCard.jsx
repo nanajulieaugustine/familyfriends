@@ -1,5 +1,4 @@
 import FaveIcon from "../(globals)/FaveIcon";
-
 import Image from "next/image";
 import Link from "next/link";
 
@@ -18,10 +17,10 @@ const AnimalsCard = ({ id, photos, name, age, breeds }) => {
             width={100}
             height={100}
             src={photo}
-            className="rounded-2xl w-40 h-28 object-cover"
+            className="rounded-2xl w-40 h-28"
           />
         ) : (
-          <div className="flex w-40 h-28 bg-slate-300 rounded-2xl items-center justify-center object-cover">
+          <div className="flex w-40 h-28 items-center justify-center object-cover">
             <h3>no image</h3>
           </div>
         )}
